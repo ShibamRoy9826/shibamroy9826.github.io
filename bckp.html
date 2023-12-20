@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Shibam Roy - Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Silkscreen&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+  <!-- Loader -->
+<div id="loader" class="grid min-h-screen place-content-center bg-[#0C0908]">
+<img src="loader.svg" class="lImage w-24 h-24" />
+</div>
+
+<!-- Navbar -->
+<section class="hero min-h-screen">
+
+<header class="text-white body-font" id="navbar" style="height: 10%;">
+  <div class="backdrop-blur-lg container mx-auto flex flex-wrap pl-5 pr-5 flex-col fixed top-0 divide-x divide-gray-800 border-b border-gray-800 md:flex-row items-center" style="height: 10%;">
+    <a class="h-full flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <span class="ml-3 text-xl logo">Shibam Roy</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center h-full ">
+      <a class="mr-3 ml-4 navLink text-center ">Home</a>
+      <a class="mr-3 ml-4 navLink text-center " href="#about">About</a>
+      <a class="mr-3 ml-4 navLink text-center " href="#portfolio">Portfolio</a>
+      <a class="mr-3 ml-4 navLink text-center " href="#contact">Contact</a>
+    </nav>
+  <!--   <div class="">Button
+      
+    </div> -->
+  </div>
+</header>
+
+<!-- Welcome Text -->
+
+<div class="flex flex-col min-h-screen items-center justify-center p-6 py-10">
+  <h1 class="text-white text-6xl m-3 mainHeading"><b>Welcome to my website</b></h1>
+  <h1 class="text-white text-5xl m-3 smallHeading"></h1>
+  <p class="text-gray-400 text-lg m-3 extraText">Browse my website and find amazing applications for free:)</p>
+
+  <button class="ml-4 text-white bg-[#4C51E0] p-4 m-5 text-base rounded-full coolButtons" id="coolButton"><b>Check Out Now🔥🔥</b></button>
+ </div>   
+</section>
+
+
+<section class="s min-h-screen" id="about">
+
+  <div class="container mx-auto flex flex-wrap p-5 flex-row bg-[#0F0F0F] justify-center items-center">
+    
+<h1 class="text-white text-6xl m-10 text-center heading" data-aos="fade-up">About <b>Myself</b></h1>
+
+<div class="border border-gray-500 rounded-lg flex flex-row sm:flex-col justify-between bg-[#1E1E1E] h-2/3 w-full"  data-aos="fade-up">
+  <div class="flex flex-col justify-center items-center rounded-xl p-2 m-2 w-1/3 h-1/3">
+  <img src="res/images/me_no_bg.png" class="h-auto max-w-full">
+  <div class="socialMediaIcons flex flex-row m-2">
+    <button class="p-2 m-2 h-10 w-10" onclick="location.href='https://google.com';">
+     <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><path d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0z" fill="#333333"/></g><path d="M24.294,22.942v-6.137c0-3.288-1.755-4.818-4.096-4.818c-1.889,0-2.735,1.039-3.206,1.768v-1.517h-3.558   c0.047,1.005,0,10.704,0,10.704h3.558v-5.978c0-0.319,0.023-0.639,0.117-0.867c0.257-0.639,0.842-1.301,1.825-1.301   c1.288,0,1.803,0.981,1.803,2.42v5.727L24.294,22.942L24.294,22.942z M9.685,10.777c1.24,0,2.013-0.823,2.013-1.85   c-0.023-1.05-0.773-1.849-1.99-1.849S7.696,7.877,7.696,8.927c0,1.028,0.772,1.85,1.967,1.85H9.685z M11.464,22.942V12.238H7.907   v10.704H11.464z" fill="#FFFFFF"/></g></svg>
+    </button>
+
+    <button class="p-2 m-2 h-10 w-10" onclick="location.href='https://google.com';">
+      <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><path d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0z" fill="#333333"/></g><path d="M22.057,7.93H9.943c-1.14,0-2.019,0.879-2.019,2.019v12.113c0,1.14,0.879,2.019,2.019,2.019h12.113   c1.14,0,2.019-0.879,2.019-2.019V9.949C24.076,8.808,23.196,7.93,22.057,7.93z M16.012,12.833c1.791,0,3.243,1.407,3.243,3.142   c0,1.735-1.452,3.142-3.243,3.142c-1.79,0-3.242-1.408-3.242-3.142C12.77,14.239,14.222,12.833,16.012,12.833z M22.057,21.557   c0,0.354-0.151,0.505-0.505,0.505H10.448c-0.353,0-0.505-0.151-0.505-0.505v-7.066l1.258,0.274   c-0.135,0.439-0.208,0.903-0.208,1.385c0,2.684,2.248,4.863,5.018,4.863c2.772,0,5.019-2.178,5.019-4.863   c0-0.482-0.073-0.946-0.208-1.385l1.234-0.274V21.557z M22.057,12.472c0,0.279-0.226,0.505-0.505,0.505h-2.019   c-0.279,0-0.505-0.226-0.505-0.505v-2.019c0-0.279,0.226-0.505,0.505-0.505h2.019c0.279,0,0.505,0.226,0.505,0.505V12.472z" fill="#FFFFFF"/></g></svg>
+    </button>
+
+    <button class="p-2 m-2 h-10 w-10" onclick="location.href='https://google.com';">
+      <svg enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Layer_3"><g><g><path d="M32,0C14.327,0,0,14.327,0,32c0,17.673,14.327,32,32,32s32-14.327,32-32C64,14.327,49.673,0,32,0z" fill="#333333"/></g></g><g id="Outline_Filled"><path d="M38.592,50.166h-4.84h-4.844c0,0,0.014-2.874,0-4.844c-6.629,1.428-8.479-3.633-8.479-3.633    c-1.21-2.423-2.423-3.633-2.423-3.633c-2.423-1.438,0-1.21,0-1.21c2.423,0,3.633,2.423,3.633,2.423    c2.126,3.609,5.908,3.028,7.266,2.423c0-1.21,0.53-3.042,1.21-3.633c-5.29-0.595-9.693-3.633-9.693-9.689s1.216-7.266,2.427-8.479    c-0.244-0.597-1.259-2.805,0.037-6.056c0,0,2.38,0,4.803,3.633c1.2-1.2,4.844-1.21,6.056-1.21c1.208,0,4.854,0.01,6.054,1.21    c2.423-3.633,4.809-3.633,4.809-3.633c1.296,3.251,0.282,5.459,0.037,6.056c1.21,1.21,2.423,2.423,2.423,8.479    s-4.397,9.092-9.689,9.689c0.682,0.591,1.21,2.675,1.21,3.633L38.592,50.166L38.592,50.166z" fill="#FFFFFF" id="Cat_3_"/></g></g></svg>
+    </button>
+  </div>
+</div>
+
+<div class="flex flex-col justify-center items-center w-full h-full "  data-aos="fade-up">
+<h1 class="text-gray-300 text-3xl text-center m-16">I am <span class="text-white a">Shibam Roy</span></h1>
+
+
+<p class="text-gray-400 p-6 m-6">Hi, I am Shibam Roy, my age is 16 and i try to create amazing applications to reduce your computer effort! my hobbies are Programming, Watching Anime, Playing Guitar, Studies, reading e-books and articles, and that's all.Telling about my goal in life, i want to be a Great Data Scientist one day. I know Python ,C++,HTML,CSS,and a little bit of javascript.I live in India,Tripura,Agartala,Santipara,Near Club road.</p>
+</div>
+</div>
+  </div>
+
+</section>
+
+<!-- Random Text -->
+<section class="bg-[#0F0F0F] flex flex-col justify-center randomText items-center">
+<div class="flex flex-col justify-center h-1/2 w-full" data-aos="fade-right">
+  <h1 class="text-5xl text-black mx-10" data-aos="fade-right"><b>I Create <br></b>With Love:)</h1>
+  <p class="text-gray-700 mx-10 my-6">
+    Coding is my passion and i put a lot of effort and time in it<br>
+
+I Always check my application properly many times before releasing it, inorder to deliver you the best and fine product.
+  </p>
+</div>
+
+<!-- Motivational Quotes -->
+</section>
+<section class="bg-[#0F0F0F] flex flex-row quotes items-center">
+<div class="flex flex-col justify-center items-center">
+  <h1 class="text-5xl text-white mx-10 text-center" data-aos="fade-up"><q>The Difference between Ordinary and Extraordinary is <b>just that little Extra</b></q></h1>
+  <h2 class="author text-center w-auto text-sm text-gray-200 bg-[#4C51E0] p-2 m-10" data-aos="fade-up"><b>Albert Einstein</b></h2>
+</div>
+</section>
+
+<!-- Acheivements -->
+<section class="bg-[#0F0F0F] min-h-screen flex flex-col acheivements justify-evenly items-center">
+<h1 class="text-white text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Certifications & Acheivements</b></h1>
+<div class="flex flex-row justify-evenly" data-aos="fade-up">
+
+<figure class="card p-4">
+  <img src="res/cert/ITAutomationWithPython.jpg" alt="CrashCourseOnPython" />
+  <figcaption class="flex flex-col sm:flex-col justify-center items-center w-full m-2">
+    <h3 class="text-center"><b>Python Certificate</b></h3>
+    <h4 class="text-center text-gray-300">IT Automation with Python</h4>
+  </figcaption>
+  <a href="res/cert/ITAutomationWithPython.pdf"></a>
+</figure>
+
+<figure class="card p-4">
+  <img src="res/cert/AlgorithmicToolbox.jpg" alt="CrashCourseOnPython" />
+  <figcaption class="flex flex-col justify-center items-center w-full m-2">
+    <h3 class="text-center"><b>DSA Certificate</b></h3>
+    <h4 class="text-center text-gray-300">Algorithmic Toolbox</h4>
+  </figcaption>
+  <a href="res/cert/AlgorithmicToolbox.pdf"></a>
+</figure>
+
+
+<figure class="card p-4">
+  <img src="res/cert/CrashCourse.jpg" alt="CrashCourseOnPython" />
+  <figcaption class="flex flex-col justify-center items-center w-full m-2">
+    <h3 class="text-center"><b>Python Certificate</b></h3>
+    <h4 class="text-center text-gray-300">Crash Course On Python</h4>
+  </figcaption>
+  <a href="res/cert/CrashCourse.pdf"></a>
+</figure>
+
+
+</div>
+  
+  <button class="ml-4 text-white bg-[#4C51E0] p-4 px-8 m-5 text-base rounded-full coolButtons" id="coolButton"><b>View All</b></button>
+
+</section>
+<!-- Highlighted Projects -->
+
+
+<section class="bg-[#0F0F0F] min-h-screen flex flex-col acheivements justify-evenly items-center">
+<h1 class="text-white text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Cool Projects</b></h1>
+<div class="flex flex-row sm:flex-col justify-evenly " data-aos="fade-up">
+
+<figure class="card p-4">
+  <img src="res/projects/MERRY_IMAGE.jpg" alt="CrashCourseOnPython" />
+  <figcaption class="flex flex-col justify-center items-center w-full m-2">
+    <h3 class="text-center"><b>Merry</b></h3>
+    <h4 class="text-center text-gray-300">The Virtual Assistant</h4>
+  </figcaption>
+  <a href="res/cert/ITAutomationWithPython.pdf"></a>
+</figure>
+
+<figure class="card p-4">
+  <img src="res/projects/OLYMPICS.jpg" alt="CrashCourseOnPython" />
+  <figcaption class="flex flex-col justify-center items-center w-full m-2">
+    <h3 class="text-center"><b>Olympics</b></h3>
+    <h4 class="text-center text-gray-300">Olympics Data Analysis</h4>
+  </figcaption>
+  <a href="res/cert/AlgorithmicToolbox.pdf"></a>
+</figure>
+
+
+<figure class="card p-4">
+  <img src="res/projects/ecosight.jpg" alt="CrashCourseOnPython" />
+  <figcaption class="flex flex-col justify-center items-center w-full m-2">
+    <h3 class="text-center"><b>EcoSight</b></h3>
+    <h4 class="text-center text-gray-300">One Step towards sustainability</h4>
+  </figcaption>
+  <a href="res/cert/CrashCourse.pdf"></a>
+</figure>
+
+
+</div>
+  
+  <button class="ml-4 text-white bg-[#4C51E0] p-4 px-8 m-5 text-base rounded-full coolButtons" id="coolButton"><b>View All</b></button>
+
+</section>
+
+<!-- Contact Info -->
+<section class="bg-[#0F0F0F] flex flex-col info justify-center items-center">
+  <div class="flex flex-col justify-center items-center" data-aos="flip-right">
+    <h1 class="text-5xl text-white mx-10 text-center">Get Connected <br><b>Follow me:)</b></h1>
+    <p class="text-gray-400 text-center p-2">Get connected to me on social media networks</p>
+  </div>
+
+  <div class="flex flex-row justi-evenly items-center">
+      <div class="flex flex-col justify-center items-center">
+        <a class="ml-3 text-white rounded-full p-2 m-16 socialIcon" data-aos="flip-up">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="w-14 h-14"  xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg>
+      </a>
+      <h2 class="text-md text-white" >Github</h2>
+      <p class="text-sm text-gray-300 text-center">Follow me</p>
+    </div>
+    <div class="flex flex-col justify-center items-center">
+      <a class="ml-3 text-white rounded-full p-2 m-16 socialIcon" data-aos="flip-up">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-14 h-14" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <h2 class="text-md text-white" >Instagram</h2>
+      <p class="text-sm text-gray-300 text-center" >Watch my posts</p>
+    </div>
+
+    <div class="flex flex-col justify-center items-center">
+      <a class="ml-3 text-white rounded-full p-2 m-16 socialIcon" data-aos="flip-up">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-14 h-14" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+
+      </a>
+      <h2 class="text-md text-white" >LinkedIn</h2>
+      <p class="text-sm text-gray-300 text-center">Connect with me</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="text-white bg-[#0f0f0f] body-font relative" id="contact" >
+  <div class="container px-5 py-24 mx-auto" data-aos="flip-left">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-5xl text-4xl font-medium title-font mb-4 text-white">Get in Touch <br><b>Contact me</b></h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I would love to <span class="text-[#4C51E0]">hear from you</span></p>
+    </div>
+    <form action="https://formspree.io/f/xwkyjjnz" method="POST">
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-300">Name</label>
+            <input type="text" id="name" placeholder="Your Name*" name="name" class="w-full bg-[#1E1E1E] rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-300">Email</label>
+            <input type="email" placeholder="Your Email ID*" id="email" name="email" class="w-full bg-[#1E1E1E] rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <div class="relative">
+            <label for="message" class="leading-7 text-sm text-gray-300">Message</label>
+            <textarea id="message" placeholder="Your Message*"  name="message" class="w-full bg-[#1E1E1E] rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-300 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+          </div>
+        </div>
+        <div class="p-2 w-full">
+          <input type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"></input>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+  </form>
+</section>
+
+
+<!-- Footer -->
+
+<footer class="text-white body-font bg-[#0f0f0f]">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
+      
+      <span class="ml-3 text-xl logo text-white">Shibam Roy</span>
+    </a>
+    <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 —
+      <a href="https://shibamroy9826.github.io/" class="text-white ml-1" rel="noopener noreferrer" target="_blank">shibamroy9826.github.io</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      
+      <a class="ml-3 text-white">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="w-5 h-5"  xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg>
+      </a>
+      <a class="ml-3 text-white">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-white">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+
+      </a>
+    </span>
+  </div>
+</footer>
+
+<!-- Footer end -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+  AOS.init({
+  
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 100, // offset (in px) from the original trigger point
+  duration: 1000
+
+});
+</script>
+</body>
+</html>
