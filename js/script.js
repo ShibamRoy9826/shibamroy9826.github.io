@@ -58,42 +58,34 @@ $(function() {
 //         });
 //     }, 1000);
 // }();
-// Auto Writing
 
-let title = document.querySelector('.smallHeading');
+// Type Writing effect
 
-let index = 1;
-let counter=0;
-let messages=["Nice To Meet You","I am Shibam Roy","A School Student","And a Programmer",""];
+var typed = new Typed('.smallHeading', {
+  strings: ['Hello there!', 'I am <span class="imp"><b>Shibam Roy</b><span>','A <span class="imp"><b>Programmer</b></span>','and a <span class="imp"><B>School Student</b></span>'],
+  typeSpeed: 100,
+  backSpeed:70,
+  loop:true,
+  backDelay:1000,
 
+});
 
-const typeWriter = () => {
-    // let new_title = name.slice(0,index);
-    // title.innerText = new_title;
-    let new_title = messages[counter].slice(0,index);
-    let len=messages[counter].length;
-    title.innerText = new_title;
+// hamburger
 
-    // index > name.length ? index = 1 : index++;
+const hamburger=document.querySelectorAll(".hamburger")
+const menu=document.querySelectorAll(".navBar")
 
-    if(counter==4){
-      counter=-1;
-    }
-    if (index>len) {
-      // for (var i = len - 1; i >= 0; i--) {
-      //   index--;
-      //   setTimeout(()=> typeWriter(),150)
-      // }
-      index=1;
-      counter++;
-    }
-    else{
-      index++;
-    }
+hamburger[0].addEventListener("click", () => {
 
-    setTimeout(() => typeWriter(), 150)
-}
+  hamburger[0].classList.toggle("active");
+  menu[0].classList.toggle("active");
+})
 
-typeWriter();
+document.querySelectorAll(".navLinkSmall").forEach(n=> n.addEventListener("click",()=>{
+  hamburger[0].classList.remove("active");
+  menu[0].classList.remove("active");
+
+}))
+
 
 

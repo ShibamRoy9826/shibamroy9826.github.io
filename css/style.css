@@ -1,13 +1,35 @@
 .hero{
-	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7) ),url("../res/images/bg4.jpg");
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7) ),url("../res/images/bg4.webp");
 	background-size: cover;
 	background-repeat: none;
 	background-attachment: fixed;
   background-position: center;
 }
+.imp{
+	color: #6058EA;
+	font-family:'Silkscreen', sans-serif;
+}
+.line{
+	width: 35px;
+	height: 5px;
+	margin: 5px auto;
+	-webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  border-radius: 1rem;
+	background-color: white;
+}
 
+.hamburger .line:nth-child(2){
+	width: 25px;
+	position: relative;
+	left: 5px;
+	transition: all 0.2s;
+}
 .randomText{
-	background-image:linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255, 0.8) ),url("../res/images/bg2.jpg");
+	background-image:linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255, 0.8) ),url("../res/images/bg2.webp");
 	background-size: cover;
 	background-repeat: none;
 	background-attachment: fixed;
@@ -15,7 +37,7 @@
 	height: 70vh;
 }
 .quotes{
-	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ),url("../res/images/bg3.jpg");
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8) ),url("../res/images/bg3.webp");
 	background-size: cover;
 	background-repeat: none;
 	background-attachment: fixed;
@@ -23,7 +45,7 @@
 	height: 70vh;
 }
 .info{
-	background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ),url("../res/images/bg2.jpg");
+	background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ),url("../res/images/bg2.webp");
 	background-size: cover;
 	background-repeat: none;
 	background-attachment: fixed;
@@ -57,16 +79,13 @@
 html{
 	scroll-behavior: smooth;
 }
-#narBar{
-	position: absolute;
-	z-index: 10;
 
-}
 .logo{
 	font-family: 'Pacifico',sans-serif;
 }
 
 .navLink{
+	height: 100%;
 	-webkit-transition: all 0.7s ease-out;
 	-moz-transition: all 0.7s ease-out;
 	-o-transition: all 0.7s ease-out;
@@ -77,6 +96,17 @@ html{
 
 .navLink:hover{
 	color: rgb(200,200,200);
+}
+
+.navLinkSmall{
+	-webkit-transition: all 0.7s ease-out;
+	-moz-transition: all 0.7s ease-out;
+	-o-transition: all 0.7s ease-out;
+	-ms-transition: all 0.7s ease-out;
+	transition: all 0.7s ease-out;
+	color: white;
+	margin: 1.5rem;
+
 }
 .socialIcon{
 	background-color: #373282;
@@ -213,4 +243,54 @@ html{
 .rowToCol{
 	flex-direction: row;
 }
+
 /*Media Queries*/
+
+@media(max-width:1028px){
+	.hamburger{
+		display: block;
+		position: fixed;
+	}
+
+
+	.hamburger.active .line:nth-child(2){
+		opacity: 0;
+	}
+	.hamburger.active .line:nth-child(1){
+		transform: rotate(45deg) translateY(21px);
+	}
+	.hamburger.active .line:nth-child(3){
+		transform: rotate(-45deg) translateY(-21px);
+	}
+	/*.navBar{
+		position: fixed;
+		top: -50vh;
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.5);
+		text-align: center;
+		transition: 1s;
+	}*/
+	/*.navBar.active{
+		top: 50vh;
+	}*/
+
+	.navBar{
+		position: absolute;
+		top: -100vh;
+		margin: auto;
+		transition: 0.7s all;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 2;
+		overflow: hidden;
+
+	}
+	.navBar.active{
+		position: fixed;
+		top:0;
+	}
+}
