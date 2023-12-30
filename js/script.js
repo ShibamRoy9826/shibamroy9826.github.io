@@ -61,14 +61,7 @@ $(function() {
 
 // Type Writing effect
 
-var typed = new Typed('.smallHeading', {
-  strings: ['Hello there!', 'I am <span class="imp"><b>Shibam Roy</b><span>','A <span class="imp"><b>Programmer</b></span>','and a <span class="imp"><B>School Student</b></span>'],
-  typeSpeed: 100,
-  backSpeed:70,
-  loop:true,
-  backDelay:1000,
 
-});
 
 // hamburger
 
@@ -79,6 +72,7 @@ hamburger[0].addEventListener("click", () => {
 
   hamburger[0].classList.toggle("active");
   menu[0].classList.toggle("active");
+
 })
 
 document.querySelectorAll(".navLinkSmall").forEach(n=> n.addEventListener("click",()=>{

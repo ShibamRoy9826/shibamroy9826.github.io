@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="w-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibam Roy - SubSeaSignal</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#0F0F0F] ">
+    <!-- Loader -->
+    <div id="loader" class="grid min-h-screen place-content-center bg-[#0C0908]">
+        <img src="../loader.svg" class="lImage w-24 h-24" />
+    </div>
+    <!-- Navbar -->
+    <header class="backdrop-blur-lg text-white border-b border-gray-800 body-font fixed top-0 left-0 right-0 z-40 " id="navbar">
+        <div class="h-full backdrop-blur-lg container mx-auto divide-x divide-gray-800 flex flex-wrap px-5 py-4 flex-row items-center z-40">
+            <a class="h-full flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <span class="ml-3 text-xl logo h-full">Shibam Roy</span>
+            </a>
+            <nav class="md:ml-auto flex flex-col flex-wrap items-center text-base justify-center h-full lg:block hidden lg:flex-row">
+                <a class="mr-3 ml-4 navLink text-center" href="index.html#home">Home</a>
+                <a class="mr-3 ml-4 navLink text-center" href="index.html#about">About</a>
+                <a class="mr-3 ml-4 navLink text-center" href="index.html#portfolio">Portfolio</a>
+                <a class="mr-3 ml-4 navLink text-center" href="index.html#contact">Contact</a>
+            </nav>
+            <div class="hamburger w-20 h-full absolute right-0 flex flex-col justify-center items-end lg:hidden z-42">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+    </header>
+    <nav class="backdrop-blur-lg w-screen h-screen flex flex-col justify-center items-center navBar lg:hidden">
+        <a class="mr-3 ml-4 navLinkSmall text-center" href="index.html#home">Home</a>
+        <a class="mr-3 ml-4 navLinkSmall text-center" href="index.html#about">About</a>
+        <a class="mr-3 ml-4 navLinkSmall text-center" href="index.html#portfolio">Portfolio</a>
+        <a class="mr-3 ml-4 navLinkSmall text-center" href="index.html#contact">Contact</a>
+    </nav>
+    <div class="flex flex-col justify-center mt-16 bg-[#0F0F0F]">
+        <h1 class="text-white text-center text-4xl lg:text-5xl mt-6 mb-3 px-6"><b>SubSeaSignal:</b><br> Rock Vs Mine</h1>
+        <p class="text-center text-gray-400 text-md px-5">A Project to make underwater travel even safer</p>
+        <div class="flex flex-col lg:flex-row justify-center mt-16 w-screen ">
+            <div class="ml-8 pl-8 mr-3 pr-3 rounded-lg">
+                <img src="../res/projects/submarine.jpg" alt="Merry The Virtual Assistant image" class="h-auto" style="width: 70vw;">
+                <div class="text-gray-400 text-md lg:p-8 contentMerry">
+                    <h1 class="font-black text-3xl text-white">
+                        SubSeaSignal
+                    </h1>
+                    <h4 class="mb-3">
+                        <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="25"><b class="text-2xl font-black text-white"> Overview</b>
+                    </h4>
+                    <div>
+                        <p>
+                            This is the project repository for a project called "SubSeaSignal" in which we have basically performed rock and mine classification.This project would make underwater travels even more safer, and this technology could be improved further to even be used in practical use cases:) We have used data science technologies to make this project and also created a wonderful website for it to publicaly avail it, anyone having access to internet can use it. Our project just requires you to input dimensions of the object and it would easily classify it as a rock or a mine. It can be used with technologies like SONAR with some slight modifications.
+                            Video presentation available - here
+                            Python Notebook available - here
+                            Video presentation available - <a class=" text-indigo-500 
+ text-indigo-500 hover:text-indigo-600 downloadLinks" href="https://youtu.be/Wlp6DpsPWmw?feature=shared">here</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+                    </div>
+                    <div>
+                        <h4 id="meet_the_team">
+                            <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="30px" alt="Git" />&nbsp;<b class="text-2xl font-black text-white">Meet The Team</b>
+                        </h4>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <span class="text-lg font-black text-gray-100">Frontend/Backend dev/ML engineer: </span>Shibam Roy - I am Shibam roy, a 16 year old school student with knowledge of Python, C++ , Data science , basic DSA and Web development.I am a Data science and tech enthusiast.I want to change the world with tech:)
+                            </li>
+                            <br>
+                            <li>
+                                <span class="text-lg font-black text-gray-100">Data Engineer: </span> Vamsi Krishna Reddy - I am Vamsi Krishna, I am a 3rd-year B.tech student from SRM, Chennai. I am a machine learning and Artificial Intelligence Enthusiast. I like to make a twist on the traditional algorithm techniques to make them stand out.
+                            </li>
+                            <li>
+                                <span class="text-lg font-black text-gray-100">Data Scientist :</span> Bhavishya Reddy - I am Bhavishya Reddy, I am a 3rd-year B.tech student from SRM, Chennai. I am a machine learning expert in the field of neural networks. I like to use my skills to make a difference in the everyday living
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><br>
+                    </div>
+                    <div>
+                        <h3 id="EchoLife-analysis" class="font-black text-3xl text-white">
+                            <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"><b> SubSeaSignal </b>
+                        </h3>
+                    </div>
+                    <div>
+                        <h4 id="project-overview" class="text-2xl font-black text-white">
+                            Project Overview
+                        </h4>
+                    </div>
+                    <div>
+                        Introducing the SubSeaSignal project for the tech optimum hackathon. Our project classifies between rocks and mines to provide even more safer underwater travel.We have used data science technologies to make this project and also created a wonderful website for it to publicaly avail it, anyone having access to internet can use it. Our project just requires you to input dimensions of the object and it would easily classify it as a rock or a mine. It can be used with technologies like SONAR with some slight modifications.
+                    </div>
+                    <div>
+                        <h4 id="project-overview" class="text-2xl font-black text-white">
+                            Team Members
+                        </h4>
+                    </div>
+                    <div>
+                        <ol>
+                            <li>
+                                -Shibam Roy: ML Engineer / Back-end developer / Front-end developer</li>
+                            <li>
+                                - Vamsi Krishna Reddy: Data Engineer
+                            </li>
+                            <li>
+                                - Bhavishya Reddy: Data Scientist
+                            </li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 id="instructions" class="text-2xl font-black text-white">
+                            <b>Instructions for usage</b>
+                        </h3>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-black text-white"><b>Our overall project together:</b></h4>
+                    </div>
+                    <div>
+                        <p>
+                            To check our overall project altogether, you can go to our project website here You can explore it and learn yourself too:)
+                        </p>
+                    </div>
+                    <h4 class="text-2xl font-black text-white"><b>Steps to Use the project:</b></h4>
+                    <div>
+                        <ol>
+                            <li>
+                                1.Go to the Project website here</li>
+                            <li>
+                                2.Scroll to the "Test Our Project" section, and fill up your name(you may fill any name incase you dont want to share your own name)
+                            </li>
+                            <li>
+                                3.Enter dimensions of the object with 60 different values, each ranging between 0-1 comma seperated. A test input can be:
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="codeSnippet">
+                        0.02,0.0371,0.0428,0.009,....,0.0032
+                    </div>
+                    <div>
+                        In case you dont have any dimensions and yet want to check our project, you can just enter a few dimensions like 2 or 3, the rest would be autofilled by the last entered value.<br><br>
+4. Press the Submit button, and all done! you will be redirected to the results page:)
+                    </div>
+                    <h4 class="text-2xl font-black text-white"><b>Dataset Description</b></h4>
+                    <div>
+                        <p>
+                            The dataset consists of a collection of sonar readings taken from an underwater environment. Each sonar reading is represented as a set of numerical features that capture different characteristics of the object being detected. The dataset contains the following columns: The dataset contains sonar readings taken from an underwater environment. Each sonar reading is represented as a set of numerical features. The features capture various characteristics of the object being detected by the sonar. The dataset includes multiple feature columns, labeled as Feature_1, Feature_2, ..., Feature_n. Each feature column contains numeric values. The dataset also includes a target column called "Label" that indicates whether the sonar reading corresponds to a "mine" or a "rock." The Label column contains binary values, where 0 represents a rock and 1 represents a mine. The goal is to train a machine learning model to accurately classify new sonar readings as either mines or rocks based on their extracted features. The dataset may require preprocessing steps such as data cleaning, feature selection, and engineering before training the model.
+                        </p>
+                    </div>
+
+                    <h4 class="text-2xl font-black text-white"><b>Conclusion</b></h4>
+                    <div>
+                        <p>
+                            The successful development of SubSeaSignal has broad implications, especially in the context of naval operations, underwater resource exploration, and environmental monitoring. By accurately distinguishing between rocks and mines in submerged environments, SubSeaSignal enhances the safety and effectiveness of various marine activities, ultimately leading to safer navigation and reduced risks for underwater ecosystems. The project's data-driven approach, coupled with the utilization of advanced technologies, showcases the power of data science in addressing complex and critical challenges. SubSeaSignal not only offers a practical and effective solution but also serves as a testament to the continuous advancement of data science in tackling real-world problems. Moving forward, the SubSeaSignal project can further evolve and be fine-tuned with more extensive datasets, improved sensor technology, and enhanced machine learning models. With ongoing development, we anticipate that SubSeaSignal will continue to contribute to the advancement of marine safety and exploration, making our underwater world a safer and more accessible place for generations to come.
+                        </p>
+                    </div>
+
+                    <h4 class="text-2xl font-black text-white"><b>Data Source</b></h4>
+                    <div>
+                        <p>
+                            We are thankful to all the data source through which we have accessed the data, here is the source:
+<a href="https://archive.ics.uci.edu/ml/machine-learning-databases/undocumented/connectionist-bench/sonar/sonar.all-data" class="downloadLinks hover:text-indigo-600 text-indigo-500">SONAR Data</a>
+                        </p>
+                    </div>
+
+                    <h4 class="text-2xl font-black text-white"><b>Acknowledgement</b></h4>
+                    <div>
+                        <p>
+                            We would like to express our sincere gratitude to Tech Optimum for organizing the hackathon that inspired this website. The hackathon was a well-organized and challenging event that provided us with the opportunity to learn new skills, collaborate with talented individuals, and develop this website. We would also like to thank the following people for their support and guidance throughout the development of this website Without your help and support, this website would not have been possible. Thank you!
+                        </p>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <div class="flex flex-col divide-y divide-gray-800 w-[100vw] p-3 border-t border-gray-800 lg:p-0 lg:w-[30vw] lg:block ">
+                <div>
+                    <h1 class="text-lg text-white text-center mb-3 pt-6"><b>Software Info</b></h1>
+                    <p class=" text-gray-400 mb-3 px-3">
+                        This is the project repository for a project called "SubSeaSignal" in which we have basically performed rock and mine classification.This project would make underwater travels even more safer, and this technology could be improved further to even be used in practical use cases:) We have used data science technologies to make this project and also created a wonderful website for it to publicaly avail it, anyone having access to internet can use it.</p>
+                </div>
+                <div class="text-gray-400 py-4">
+                    <h1 class="text-white text-center"><b>Team Members</b></h1><br>
+                    <p class="text-center px-3">Shibam Roy, Ankush Roy, Swadhin Maharana</p>
+                </div>
+                <div class="text-gray-400 py-4">
+                    <h1 class="text-white text-center"><b>Project Website</b></h1><br>
+                    <p class="text-center px-3"> 1GB(minimum)-4GB(asdasdasdasded)</p>
+                </div>
+                <div class="text-gray-400 text-center py-4">
+                    <span class="text-white"><b>Project Website</b></span> <a class="hover:text-indigo-600 text-indigo-500 downloadLinks" href="https://ecosight.pythonanywhere.com/">Here</a><br><br>
+                    <span class="text-white"><b>Project OverView</b></span> <a class="hover:text-indigo-600 text-indigo-500 downloadLinks" href="https://youtu.be/Wlp6DpsPWmw?si=F8FcVaZm6mpWnLQl">Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-white body-font bg-[#0f0f0f] border-t border-gray-800">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
+      
+      <span class="ml-3 text-xl logo text-white">Shibam Roy</span>
+    </a>
+    <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 —
+      <a href="https://shibamroy9826.github.io/" class="text-white ml-1" rel="noopener noreferrer" target="_blank">shibamroy9826.github.io</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      
+      <a class="ml-3 text-white" href="https://github.com/ShibamRoy9826/">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="w-5 h-5"  xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg>
+      </a>
+      <a class="ml-3 text-white">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-white" href="https://www.linkedin.com/in/shibam-roy-509774257/">
+        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+        </svg>
+
+      </a>
+    </span>
+  </div>
+</footer>
+    <!-- Footer end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+</body>
+
+</html>
