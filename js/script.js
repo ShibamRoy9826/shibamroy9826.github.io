@@ -9,6 +9,7 @@ allElements.forEach((element) => {
 element.style.pointerEvents = "none";
 });
 
+
 function enableEverything() {
 
   document.body.style.overflowY = "auto";
@@ -19,18 +20,20 @@ function enableEverything() {
   });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("load", function () {
+    setTimeout(() => {
+      // setTimeout(function(){
+      loader.style.display = "none";
 
-window.addEventListener("load", function () {
-  setTimeout(() => {
-    // setTimeout(function(){
-    loader.style.display = "none";
+      // loader.style.opacity=0;
+      document.getElementById("loader").classList.add('hidden');
+      enableEverything(); 
 
-    // loader.style.opacity=0;
-    document.getElementById("loader").classList.add('hidden');
-    enableEverything(); 
-
-  }, 1000);
+    }, 1000);
+  });
 });
+
 
 $(function() {
   $(".lImage").fadeIn(500, function() {
@@ -49,17 +52,6 @@ $(function() {
         });
     }, 1000);
 }();
-
-// loader fade out
-// !function(){
-//     setTimeout(function(){
-//         document.querySelector('.loader').css({opacity: '0'}).one('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
-//             document.querySelector(this).hide();
-//         });
-//     }, 1000);
-// }();
-
-// Type Writing effect
 
 
 
