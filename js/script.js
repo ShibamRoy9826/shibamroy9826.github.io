@@ -20,18 +20,17 @@ function enableEverything() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  window.addEventListener("load", function () {
-    setTimeout(() => {
-      // setTimeout(function(){
-      loader.style.display = "none";
 
-      // loader.style.opacity=0;
-      document.getElementById("loader").classList.add('hidden');
-      enableEverything(); 
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    // setTimeout(function(){
+    loader.style.display = "none";
 
-    }, 1000);
-  });
+    // loader.style.opacity=0;
+    document.getElementById("loader").classList.add('hidden');
+    enableEverything(); 
+
+  }, 1000);
 });
 
 
