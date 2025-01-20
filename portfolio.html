@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shibam Roy - Portfolio</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/themes.css">
   <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Silkscreen&display=swap" rel="stylesheet">
 <link rel="icon" href="res/logo.png" type="image/icon type">
 
-
 </head>
-<body class="bg-[#0F0F0F] ">
+<body>
 
   <!-- Loader -->
 <div id="loader" class="grid min-h-screen place-content-center bg-[#0C0908]">
@@ -22,9 +22,9 @@
 </div>
 <!-- Navbar -->
 
- <header class="backdrop-blur-lg text-white border-b border-gray-800 body-font fixed top-0 left-0 right-0 z-40 " id="navbar">
+ <header class="backdrop-blur-lg border-b border-gray-800 body-font fixed top-0 left-0 right-0 z-40 " id="navbar">
   <div class="h-full backdrop-blur-lg container mx-auto divide-x divide-gray-800 flex flex-wrap px-5 py-4 flex-row items-center z-40">
-    <a class="h-full flex title-font font-medium items-center text-white mb-4 md:mb-0">
+    <a class="h-full flex title-font font-medium items-center mb-4 md:mb-0">
       <span class="ml-3 text-xl logo h-full">Shibam Roy</span>
     </a>
     <nav class="md:ml-auto flex flex-col flex-wrap items-center text-base justify-center h-full lg:block hidden lg:flex-row">
@@ -50,10 +50,10 @@
 
 
 
-<section class="h-72 flex flex-col mt-16 items-center">
+<section class="h-72 flex flex-col items-center">
 
 <div class="flex flex-col justify-center items-center w-full h-72 portfolioStart">
-  <h1 class="text-center text-white text-4xl lg:text-5xl"><b>My Projects and Acheivements</b></h1>
+  <h1 class="text-center text-4xl lg:text-5xl"><b>My Projects</b></h1>
 </div>
 
 </section>
@@ -61,61 +61,129 @@
 
 <!-- Highlighted Projects -->
 
-<section class="bg-[#0F0F0F] min-h-screen flex flex-col acheivements justify-evenly items-center" id="projects">
-<h1 class="text-white text-5xl text-4xl lg:text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Cool Projects</b></h1>
-<div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
+<section class="min-h-screen flex flex-col acheivements justify-evenly items-center" id="projects">
+        <h1 class="text-5xl text-4xl lg:text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Projects</b></h1>
+        <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
+          <div class="projectCard">
+            <img src="res/projects/conversafe.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>Conversafe</b></h3>
+              <p class="text-[#a6adc8]">A FOSS language learning platform!</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/Conversafe" target="_blank" >Repo</a>
+              <a class="" href="https://conversafe.hackclub.app" target="_blank" >Demo</a>
+              </div>
+            </div>
+          </div>
 
-<figure class="bg-[#0F0F0F] card p-4">
-  <img src="res/projects/merry.png" alt="CrashCourseOnPython" />
-  <figcaption class="flex flex-col justify-center items-center w-full m-2">
-    <h3 class="text-center"><b>Merry</b></h3>
-    <h4 class="text-center text-gray-300">The Virtual Assistant</h4>
-  </figcaption>
-  <a href="projects/merry.html"></a>
-</figure>
+          <div class="projectCard">
+            <img src="res/projects/easyfeh.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>EasyFeh</b></h3>
+              <p class="text-[#a6adc8]">A Simple wallpaper manager for linux!</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/easyfeh" target="_blank">Repo</a>
+              <a class="" href="https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<figure class="bg-[#0F0F0F] card p-4">
-  <img src="res/projects/OLYMPICS.jpg" alt="CrashCourseOnPython" />
-  <figcaption class="flex flex-col justify-center items-center w-full m-2">
-    <h3 class="text-center"><b>Olympics</b></h3>
-    <h4 class="text-center text-gray-300">Olympics Data Analysis</h4>
-  </figcaption>
-  <a href="projects/olympics.html"></a>
-</figure>
+        <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
+          <div class="projectCard">
+            <img src="res/projects/ecosight.jpg" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>EcoSight</b></h3>
+              <p class="text-[#a6adc8]">A website to make people more aware about the amount of pollution they cause</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project" target="_blank">Repo</a>
+              <a class="" href="https://ecosight.pythonanywhere.com" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
 
+          <div class="projectCard">
+            <img src="res/projects/qt_tile.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>QT_Tile</b></h3>
+              <p class="text-[#a6adc8]">A simple yet beautiful qtile rice(with a customizable installer for arch)!</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/qt_tile" target="_blank">Repo</a>
+              <a class="" href="https://cloud-7t3z6wj50-hack-club-bot.vercel.app/0inshot_20241216_102136759.mp4" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
+          <div class="projectCard">
+            <img src="res/projects/remime.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>Remime</b></h3>
+              <p class="text-[#a6adc8]">An efficient way to manage your time through the terminal, its a TUI application made with textual!</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/remime" target="_blank">Repo</a>
+              <a class="" href="https://ecosight.pythonanywhere.com" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
 
-<figure class="bg-[#0F0F0F] card p-4">
-  <img src="res/projects/ecosight.jpg" alt="CrashCourseOnPython" />
-  <figcaption class="flex flex-col justify-center items-center w-full m-2">
-    <h3 class="text-center"><b>EcoSight</b></h3>
-    <h4 class="text-center text-gray-300">One Step towards sustainability</h4>
-  </figcaption>
-  <a href="projects/ecosight.html"></a>
-</figure>
+          <div class="projectCard">
+            <img src="res/projects/SantaPlace.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>SantaPlace</b></h3>
+              <p class="text-[#a6adc8]">You doesn't like santa? Its mostly a countdown website for christmas! Made for an event called boba drops organised by hackclub!</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/SantaPlace" target="_blank">Repo</a>
+              <a class="" href="https://shibamroy9826.github.io/SantaPlace" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
+          <div class="projectCard">
+            <img src="res/projects/subseasignal.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>SubSeaSignal</b></h3>
+              <p class="text-[#a6adc8]">Rock vs Mine classification, for safer underwater travel ig?</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/SubSeaSignal" target="_blank">Repo</a>
+              <a class="" href="https://subseasignal.pythonanywhere.com" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
 
+          <div class="projectCard">
+            <img src="res/projects/portfolio.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>Portfolio</b></h3>
+              <p class="text-[#a6adc8]">This website itself? Yup, I made it!</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/shibamroy9826.github.io" target="_blank">Repo</a>
+              <a class="" href="https://shibamroy9826.github.io/" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-
-</div>
-  <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
-
-<figure class="card p-4 bg-[#0F0F0F]">
-  <img src="res/projects/submarine.jpg" alt="CrashCourseOnPython" />
-  <figcaption class="flex flex-col justify-center items-center w-full m-2">
-    <h3 class="text-center"><b>SubSeaSignal</b></h3>
-    <h4 class="text-center text-gray-300">Rock Vs Mine</h4>
-  </figcaption>
-  <a href="projects/subseasignal.html"></a>
-</figure>
-
-
-</div>
-
+        <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
+          <div class="projectCard">
+            <img src="res/projects/remime-web-lite.png" style="z-index:0;" width="100%" height="100%">
+            <div class="cardContent flex flex-col items-center justify-center" style="z-index:10;">
+              <h3 class=""><b>Remime Web Lite</b></h3>
+              <p class="text-[#a6adc8]">Remime, but a super lightweight version(Had to cutoff a lot of features though), but its small enough to fit into a QR code! (Made for an event called saycheese organised by hackclub!)</p>
+              <div class="flex flex-row justify-evenly cardButtons">
+              <a class="" href="https://github.com/ShibamRoy9826/remime-web-lite" target="_blank">Repo</a>
+              <a class="" href="#" target="_blank">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
 </section>
 
 <!-- Acheivements -->
-<section class="bg-[#0F0F0F] min-h-screen flex flex-col acheivements justify-evenly items-center">
-<h1 class="text-white text-4xl lg:text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Certifications & Acheivements</b></h1>
+<section class="min-h-screen flex flex-col acheivements justify-evenly items-center">
+<h1 class="text-4xl lg:text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Certifications</b></h1>
 <!-- Row 1 -->
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
@@ -330,40 +398,39 @@
 </section>
 
 
-<!-- Footer -->
 
-<footer class="text-white body-font bg-[#0f0f0f] border-t border-gray-800">
-  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-    <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
-      
-      <span class="ml-3 text-xl logo text-white">Shibam Roy</span>
-    </a>
-    <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 —
-      <a href="https://shibamroy9826.github.io/" class="text-white ml-1" rel="noopener noreferrer" target="_blank">shibamroy9826.github.io</a>
-    </p>
-    <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-      
-      <a class="ml-3 text-white" href="https://github.com/ShibamRoy9826/">
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="w-5 h-5"  xmlns="http://www.w3.org/2000/svg"><path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path></svg>
-      </a>
-      <a class="ml-3 text-white">
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-        </svg>
-      </a>
-      <a class="ml-3 text-white" href="https://www.linkedin.com/in/shibam-roy-509774257/">
-        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-          <circle cx="4" cy="4" r="2" stroke="none"></circle>
-        </svg>
-
-      </a>
-    </span>
-  </div>
-</footer>
-
-<!-- Footer end -->
+    <!-- Footer -->
+    <footer class="body-font border-t border-gray-800">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
+                <span class="ml-3 text-xl logo ">Shibam Roy</span>
+            </a>
+            <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="color:var(--fg);" >© 2023 —
+                <a href="https://shibamroy9826.github.io/" class="ml-1" rel="noopener noreferrer" target="_blank">shibamroy9826.github.io</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="ml-3 " href="https://github.com/ShibamRoy9826/">
+                    <svg stroke="currentColor" fill="var(--fg)" stroke-width="0" viewBox="0 0 1024 1024" class="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 " href="https://www.reddit.com/user/shibamroy/">
+<svg viewBox="0 -1.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier"> <title>reddit [#143]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-100.000000, -7561.000000)" fill="var(--fg)"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.029,7412.24746 C56.267,7412.24746 55.628,7411.6217 55.628,7410.8499 C55.628,7410.07708 56.267,7409.43103 57.029,7409.43103 C57.79,7409.43103 58.407,7410.07708 58.407,7410.8499 C58.407,7411.6217 57.791,7412.24746 57.029,7412.24746 M57.223,7414.82961 C56.55,7415.51116 55.495,7415.8428 53.999,7415.8428 C52.502,7415.8428 51.448,7415.51116 50.776,7414.82961 C50.63,7414.68154 50.63,7414.44219 50.776,7414.2931 C50.921,7414.14503 51.158,7414.14503 51.304,7414.2931 C51.829,7414.82556 52.71,7415.08519 53.999,7415.08519 C55.287,7415.08519 56.169,7414.82556 56.695,7414.2931 C56.84,7414.14503 57.077,7414.14503 57.223,7414.2931 C57.369,7414.44219 57.369,7414.68154 57.223,7414.82961 M49.592,7410.8499 C49.592,7410.07809 50.23,7409.43103 50.991,7409.43103 C51.752,7409.43103 52.369,7410.07809 52.369,7410.8499 C52.369,7411.6217 51.752,7412.24746 50.991,7412.24746 C50.23,7412.24746 49.592,7411.6217 49.592,7410.8499 M64,7409.31339 C64,7408.04665 62.984,7407.01623 61.735,7407.01623 C61.159,7407.01623 60.616,7407.23428 60.2,7407.62475 C58.705,7406.63793 56.703,7406 54.486,7405.91278 L55.709,7402.12677 L58.921,7402.89351 C58.922,7403.93611 59.758,7404.78296 60.786,7404.78296 C61.814,7404.78296 62.651,7403.93408 62.651,7402.89148 C62.651,7401.84888 61.814,7401 60.786,7401 C60.016,7401 59.355,7401.47465 59.07,7402.15112 C58.378,7401.9858 55.904,7401.39452 55.212,7401.22921 L53.702,7405.90467 C51.401,7405.94828 49.316,7406.58316 47.765,7407.59331 C47.354,7407.22312 46.822,7407.01623 46.264,7407.01623 C45.016,7407.01623 44,7408.04665 44,7409.31339 C44,7410.11765 44.414,7410.85497 45.076,7411.26876 C44.473,7414.88134 48.67,7418 53.958,7418 C59.224,7418 63.407,7414.90872 62.849,7411.3144 C63.557,7410.91176 64,7410.1572 64,7409.31339" id="reddit-[#143]"> </path> </g> </g> </g> </g>
+</svg>
+                </a>
+                <a class="ml-3 " href="https://www.linkedin.com/in/shibam-roy-509774257/">
+                    <svg fill="var(--fg)" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- Footer end -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>

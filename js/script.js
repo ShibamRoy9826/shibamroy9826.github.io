@@ -73,4 +73,40 @@ document.querySelectorAll(".navLinkSmall").forEach(n=> n.addEventListener("click
 }))
 
 
+// project cards
+
+let cards=document.querySelectorAll(".projectCard");
+let children;
+
+cards.forEach(item=>{
+  item.addEventListener("mouseover",()=>{
+      item.children[1].style.opacity="1";
+      item.children[1].style.backgroundColor="rgba(0,0,0,0.6)";
+      item.children[0].style.filter="grayscale(100%)";
+  });
+  item.addEventListener("mouseout",()=>{
+      item.children[1].style.opacity="0";
+      item.children[1].style.backgroundColor="rgba(0,0,0,0)";
+      item.children[0].style.filter="grayscale(0%)";
+  });
+  //item.addEventListener("onclick",()=>{
+  //    if(item.children[1].style.opacity=="0"){
+  //      item.children[1].style.opacity="1";
+  //    }else{
+  //      item.children[1].style.opacity="0";
+  //    }
+  //    if(item.children[1].style.backgroundColor=="rgba(0,0,0,0)"){
+  //        item.children[1].style.backgroundColor="rgba(0,0,0,0.6)";
+  //    }else{
+  //        item.children[1].style.backgroundColor="rgba(0,0,0,0)";
+  //    }
+  //    if(item.children[0].style.filter=="grayscale(0%)"){
+  //        item.children[0].style.filter="grayscale(100%)";
+  //    }else{
+  //        item.children[0].style.filter="grayscale(0%)";
+  //    }
+  //})
+
+})
+
 

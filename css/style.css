@@ -13,7 +13,6 @@
   background-position: center;
 }
 .imp{
-	color: #6058EA;
 	font-family:'Silkscreen', sans-serif;
 }
 .line{
@@ -36,7 +35,7 @@
 	transition: all 0.2s;
 }
 .randomText{
-	background-image:linear-gradient(rgba(255,255,255, 0.7), rgba(255,255,255, 0.8) ),url("../res/images/bg2.webp");
+	background-image:url("../res/images/bg2.webp");
 	background-size: cover;
 	background-repeat: none;
 	background-attachment: fixed;
@@ -52,7 +51,7 @@
 	height: 70svh;
 }
 .info{
-	background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ),url("../res/images/bg2.webp");
+	background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ),url("../res/images/bg5.webp");
 	background-size: cover;
 	background-repeat: none;
 	background-attachment: fixed;
@@ -69,20 +68,6 @@
 }
 
 
-#coolButton{
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out;
-  font-family: 'Ubuntu', sans-serif;
-}
-#coolButton:hover{
-  transition: 1s linear;
-  background-color: #6058EB;
-  filter: drop-shadow(0 0 10px #6058EB) drop-shadow(0 0 40px #6058EB)
-  contrast(1.8) brightness(1.8);
-}
 html{
 	scroll-behavior: smooth;
 }
@@ -95,6 +80,7 @@ html{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: var(--fg);
 }
 
 .navLink{
@@ -105,10 +91,11 @@ html{
 	-ms-transition: all 0.7s ease-out;
 	transition: all 0.7s ease-out;
 	vertical-align: middle;
+  color: var(--fg);
 }
 
 .navLink:hover{
-	color: rgb(200,200,200);
+	color: var(--subtext);
 }
 
 .navLinkSmall{
@@ -122,15 +109,16 @@ html{
 
 }
 .socialIcon{
-	background-color: #373282;
+	background-color: var(--primary);
 	transition: 1s all linear;
 	position: relative;
 	left:2rem;
 
 }
 .socialIcon:hover{
-	background-color: #4C54DD;
+	background-color: var(--secondary);
 }
+
 #loader {
 	position: absolute;
 	z-index: 10000;
@@ -260,19 +248,6 @@ html{
 	flex-direction: row;
 }
 
-
-.contentMerry h1{
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
-
-.contentMerry div{
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.downloadLinks{
-	transition: 1s all;
-}
 ol li{
 	padding-top: 1rem;
 }
@@ -283,6 +258,93 @@ ol li{
    border-radius: 3px;
    padding: 3rem;
 }
+
+.skill{
+  margin:1rem;
+}
+.skill h1{
+  font-size:1.5rem;
+}
+
+.projectCard{
+  height:20rem;
+  width:40rem;
+  transition:1s;
+  border-radius:1rem;
+  box-shadow:0px 0px 30px 10px #080808;
+  position:relative;
+  margin:1rem;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+.projectCard img{
+  border-radius:1rem;
+}
+.projectCard:hover{
+  box-shadow:0px 0px 40px 10px #080808;
+}
+.cardContent{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  transition:1s;
+  height:100%;
+  width:100%;
+  opacity:0;
+}
+.cardContent p{
+  width:70%;
+  text-align:center;
+}
+.cardContent h3{
+ font-size:1.5rem; 
+ margin-bottom:0.5rem;
+}
+.cardButtons a{
+  margin:1rem;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--primary);
+  color:var(--bg2);
+  padding:0.5rem;
+  border-radius:1rem;
+}
+
+.cardButtons a:hover{
+  transition: 0.3s linear;
+  background-color: var(--primary);
+  filter: drop-shadow(0 0 10px var(--primary)) drop-shadow(0 0 40px var(--primary));
+  contrast(1.8) brightness(1.8);
+}
+
+.coolButtons{
+  color:var(--bg2);
+  background-color:var(--primary);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.coolButtons:hover{
+  transition: 1s linear;
+  background-color: var(--primary);
+  filter: drop-shadow(0 0 10px var(--primary)) drop-shadow(0 0 40px var(--primary));
+}
+
+section{
+  background-color:var(--bg2);
+}
+
+
 /*Media Queries*/
 
 @media(max-width:1028px){
@@ -320,60 +382,20 @@ ol li{
 	}
 }
 
-.skill{
-  margin:1rem;
-}
-.skill h1{
-  font-size:1.5rem;
+
+@media(max-width:700px){
+  .projectCard{
+    max-width:25rem;
+    max-height:15rem;
+    overflow:hidden;
+  }
 }
 
-.projectCard{
-  height:20rem;
-  width:40rem;
-  transition:1s;
-  border-radius:1rem;
-  box-shadow:0px 0px 30px 10px #080808;
-  position:relative;
-  margin:1rem;
-  overflow:hidden;
-}
-.projectCard img{
-  border-radius:1rem;
-}
-.projectCard:hover{
-  box-shadow:0px 0px 40px 10px #080808;
-}
-.cardContent{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  transition:1s;
-  height:100%;
-  width:100%;
-  opacity:0;
-}
-.cardContent h3{
- font-size:1.5rem; 
- margin-bottom:0.5rem;
-}
-.cardButtons a{
-  margin:1rem;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #4c51e0;
-  padding:0.5rem;
-  border-radius:1rem;
-}
 
-.cardButtons a:hover{
-  transition: 0.3s linear;
-  background-color: #6058EB;
-  filter: drop-shadow(0 0 10px #6058EB) drop-shadow(0 0 40px #6058EB)
-  contrast(1.8) brightness(1.8);
+@media(max-width:400px){
+  .projectCard{
+    max-width:20rem;
+    max-height:10rem;
+    overflow:hidden;
+  }
 }
-
