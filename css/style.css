@@ -302,7 +302,7 @@ ol li{
  font-size:1.5rem; 
  margin-bottom:0.5rem;
 }
-.cardButtons a{
+.cardButtons button{
   margin:1rem;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -316,7 +316,7 @@ ol li{
   border-radius:1rem;
 }
 
-.cardButtons a:hover{
+.cardButtons button:hover{
   transition: 0.3s linear;
   background-color: var(--primary);
   filter: drop-shadow(0 0 10px var(--primary)) drop-shadow(0 0 40px var(--primary));

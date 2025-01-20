@@ -81,11 +81,13 @@ let children;
 cards.forEach(item=>{
   item.addEventListener("mouseover",()=>{
       item.children[1].style.opacity="1";
+      item.children[1].disabled="true";
       item.children[1].style.backgroundColor="rgba(0,0,0,0.6)";
       item.children[0].style.filter="grayscale(100%)";
   });
   item.addEventListener("mouseout",()=>{
       item.children[1].style.opacity="0";
+      item.children[1].disabled="false";
       item.children[1].style.backgroundColor="rgba(0,0,0,0)";
       item.children[0].style.filter="grayscale(0%)";
   });
