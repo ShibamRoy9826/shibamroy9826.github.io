@@ -340,9 +340,13 @@ ol li{
   filter: drop-shadow(0 0 10px var(--primary)) drop-shadow(0 0 40px var(--primary));
 }
 
-section{
+section,footer{
   background-color:var(--bg2);
 }
+header{
+  width:100vw;
+}
+
 
 
 /*Media Queries*/
