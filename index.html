@@ -32,6 +32,13 @@
                 <a class="mr-3 ml-4 navLink text-center" href="portfolio.html">Portfolio</a>
                 <a class="mr-3 ml-4 navLink text-center" href="#contact">Contact</a>
             </nav>
+
+                <label id="switch" class="mx-[5rem] lg:hidden">
+<svg fill="var(--fg)" viewBox="0 0 64 64" data-name="Layer 1" class="h-8 w-8 relative right-[2rem] bottom-[0.5rem]" id="Layer_1" xmlns="http://www.w3.org/2000/svg" style="--darkreader-inline-fill: var(--darkreader-background-000000, #000000);" data-darkreader-inline-fill=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M34.82,56.11a23.86,23.86,0,0,1-9.38-1.9A2,2,0,0,1,27,50.53a19.87,19.87,0,0,0,7.82,1.58A20.16,20.16,0,0,0,46.59,48.3a24.12,24.12,0,0,1-16.2-35.91A20.16,20.16,0,0,0,14.71,32a19.91,19.91,0,0,0,3.88,11.87,2,2,0,0,1-3.23,2.37A24.12,24.12,0,0,1,34.66,7.89h0A2,2,0,0,1,36.5,9.07a2,2,0,0,1-.33,2.16,20.11,20.11,0,0,0,15,33.5h.13a2,2,0,0,1,1.83,1.19,2,2,0,0,1-.34,2.15A24.1,24.1,0,0,1,34.82,56.11Z"></path></g></svg>
+                  <input type="checkbox" checked="true" id="darkModeToggle">
+                  <span id="slider"></span>
+                </label>
+
             <div class="hamburger w-20 h-full absolute right-0 flex flex-col justify-center items-end lg:hidden z-42">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -48,9 +55,9 @@
     <section class="hero min-h-screen" id="home">
         <!-- Welcome Text -->
         <div class="flex flex-col min-h-screen items-center justify-center p-6 py-10">
-            <h1 class="text-5xl lg:text-6xl m-3 mainHeading text-center"><b>Welcome to my website</b></h1>
-            <h1 class="text-4xl leading-14 h-14 lg:text-5xl m-5  smallHeading text-center"></h1>
-            <p class="text-gray-400 text-md lg:text-lg m-3 text-center extraText">I like to contribute to and to make open-source stuff, check them out:)</p>
+            <h1 class="text-5xl lg:text-6xl m-3 mainHeading text-center lightHead"><b>Welcome to my website</b></h1>
+            <h1 class="text-4xl leading-14 h-14 lg:text-5xl m-5  smallHeading text-center lightHead"></h1>
+            <p class="text-md lg:text-lg m-3 text-center extraText lightPara" style="color:var(--subtext);">I like to contribute to and to make open-source stuff, check them out:)</p>
             <a class="ml-4 p-4 m-5 rounded-full coolButtons"><b>Check Out Now🔥🔥</b></a>
         </div>
     </section>
@@ -78,7 +85,7 @@
 <svg viewBox="0 -1.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" class="h-[1rem] w-[1rem]" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
 <g id="SVGRepo_bgCarrier" stroke-width="0"/>
 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-<g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-100.000000, -7561.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.029,7412.24746 C56.267,7412.24746 55.628,7411.6217 55.628,7410.8499 C55.628,7410.07708 56.267,7409.43103 57.029,7409.43103 C57.79,7409.43103 58.407,7410.07708 58.407,7410.8499 C58.407,7411.6217 57.791,7412.24746 57.029,7412.24746 M57.223,7414.82961 C56.55,7415.51116 55.495,7415.8428 53.999,7415.8428 C52.502,7415.8428 51.448,7415.51116 50.776,7414.82961 C50.63,7414.68154 50.63,7414.44219 50.776,7414.2931 C50.921,7414.14503 51.158,7414.14503 51.304,7414.2931 C51.829,7414.82556 52.71,7415.08519 53.999,7415.08519 C55.287,7415.08519 56.169,7414.82556 56.695,7414.2931 C56.84,7414.14503 57.077,7414.14503 57.223,7414.2931 C57.369,7414.44219 57.369,7414.68154 57.223,7414.82961 M49.592,7410.8499 C49.592,7410.07809 50.23,7409.43103 50.991,7409.43103 C51.752,7409.43103 52.369,7410.07809 52.369,7410.8499 C52.369,7411.6217 51.752,7412.24746 50.991,7412.24746 C50.23,7412.24746 49.592,7411.6217 49.592,7410.8499 M64,7409.31339 C64,7408.04665 62.984,7407.01623 61.735,7407.01623 C61.159,7407.01623 60.616,7407.23428 60.2,7407.62475 C58.705,7406.63793 56.703,7406 54.486,7405.91278 L55.709,7402.12677 L58.921,7402.89351 C58.922,7403.93611 59.758,7404.78296 60.786,7404.78296 C61.814,7404.78296 62.651,7403.93408 62.651,7402.89148 C62.651,7401.84888 61.814,7401 60.786,7401 C60.016,7401 59.355,7401.47465 59.07,7402.15112 C58.378,7401.9858 55.904,7401.39452 55.212,7401.22921 L53.702,7405.90467 C51.401,7405.94828 49.316,7406.58316 47.765,7407.59331 C47.354,7407.22312 46.822,7407.01623 46.264,7407.01623 C45.016,7407.01623 44,7408.04665 44,7409.31339 C44,7410.11765 44.414,7410.85497 45.076,7411.26876 C44.473,7414.88134 48.67,7418 53.958,7418 C59.224,7418 63.407,7414.90872 62.849,7411.3144 C63.557,7410.91176 64,7410.1572 64,7409.31339" id="reddit-[#143]"> </path> </g> </g> </g> </g>
+<g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-100.000000, -7561.000000)" fill="var(--fg)"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M57.029,7412.24746 C56.267,7412.24746 55.628,7411.6217 55.628,7410.8499 C55.628,7410.07708 56.267,7409.43103 57.029,7409.43103 C57.79,7409.43103 58.407,7410.07708 58.407,7410.8499 C58.407,7411.6217 57.791,7412.24746 57.029,7412.24746 M57.223,7414.82961 C56.55,7415.51116 55.495,7415.8428 53.999,7415.8428 C52.502,7415.8428 51.448,7415.51116 50.776,7414.82961 C50.63,7414.68154 50.63,7414.44219 50.776,7414.2931 C50.921,7414.14503 51.158,7414.14503 51.304,7414.2931 C51.829,7414.82556 52.71,7415.08519 53.999,7415.08519 C55.287,7415.08519 56.169,7414.82556 56.695,7414.2931 C56.84,7414.14503 57.077,7414.14503 57.223,7414.2931 C57.369,7414.44219 57.369,7414.68154 57.223,7414.82961 M49.592,7410.8499 C49.592,7410.07809 50.23,7409.43103 50.991,7409.43103 C51.752,7409.43103 52.369,7410.07809 52.369,7410.8499 C52.369,7411.6217 51.752,7412.24746 50.991,7412.24746 C50.23,7412.24746 49.592,7411.6217 49.592,7410.8499 M64,7409.31339 C64,7408.04665 62.984,7407.01623 61.735,7407.01623 C61.159,7407.01623 60.616,7407.23428 60.2,7407.62475 C58.705,7406.63793 56.703,7406 54.486,7405.91278 L55.709,7402.12677 L58.921,7402.89351 C58.922,7403.93611 59.758,7404.78296 60.786,7404.78296 C61.814,7404.78296 62.651,7403.93408 62.651,7402.89148 C62.651,7401.84888 61.814,7401 60.786,7401 C60.016,7401 59.355,7401.47465 59.07,7402.15112 C58.378,7401.9858 55.904,7401.39452 55.212,7401.22921 L53.702,7405.90467 C51.401,7405.94828 49.316,7406.58316 47.765,7407.59331 C47.354,7407.22312 46.822,7407.01623 46.264,7407.01623 C45.016,7407.01623 44,7408.04665 44,7409.31339 C44,7410.11765 44.414,7410.85497 45.076,7411.26876 C44.473,7414.88134 48.67,7418 53.958,7418 C59.224,7418 63.407,7414.90872 62.849,7411.3144 C63.557,7410.91176 64,7410.1572 64,7409.31339" id="reddit-[#143]"> </path> </g> </g> </g> </g>
 </svg>
                         </button>
                         <button class="p-2 m-2 h-10 w-10" onclick="location.href='https://github.com/ShibamRoy9826/';">
@@ -98,24 +105,24 @@
                     </div>
                 </div>
                 <div class="flex flex-col justify-center items-center w-full h-full " data-aos="fade-up">
-                    <h1 class="text-gray-300 text-3xl text-center m-4 lg:m-16">I am <span class="a">Shibam Roy</span></h1>
-                    <p class="text-gray-400 p-6 m-6 text-center">Hi, I am Shibam Roy, my age is 17 and I love data science. I use Arch(btw) with qtile , and I use Neovim(with NvChad) as my daily code editor. I like to contribute to open-source projects, and also make FOSS projects! Besides Programming, I love to watch Anime, play(I play guitar) or listen to music, and reading e-books and articles, and that's pretty much all about myself. Have a nice day :)</p>
+                    <h1 class="text-3xl text-center m-4 lg:m-16">I am <span class="a">Shibam Roy</span></h1>
+                    <p class="p-6 m-6 text-center" style="color:var(--subtext);">Hi, I am Shibam Roy, my age is 17 and I love data science. I use Arch(btw) with qtile , and I use Neovim(with NvChad) as my daily code editor. I like to contribute to open-source projects, and also make FOSS projects! Besides Programming, I love to watch Anime, play(I play guitar) or listen to music, and reading e-books and articles, and that's pretty much all about myself. Have a nice day :)</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Random Text -->
-    <section class="flex flex-col justify-center randomText items-center">
+    <section class="flex flex-col justify-center randomText items-center" id="randomText">
         <div class="flex flex-col justify-center h-1/2 w-full" data-aos="fade-right">
-            <h1 class="text-5xl mx-10" data-aos="fade-right"><b>I Create <br></b>With Love:)</h1>
-            <p class="mx-10 my-6" style="color:var(--subtext);">
+            <h1 class="text-5xl mx-10 lightHead" data-aos="fade-right"><b>I Create <br></b>With Love:)</h1>
+            <p class="mx-10 my-6 lightPara" style="color:var(--subtext);">
                 Coding is my passion and I try my best in my applications!<br>
                 All my projects contain my love and affection, please let me know if you have any feedback about any of them!
             </p>
         </div>
         <!-- Motivational Quotes -->
     </section>
-    <section class="flex flex-row quotes justify-center items-center">
+    <section class="flex flex-row quotes justify-center items-center" id="quote">
         <div class="flex flex-col justify-center items-center">
             <h1 class="text-3xl lg:text-5xl mx-10 text-center" data-aos="fade-up"><q>The Difference between Ordinary and Extraordinary is <b>just that little Extra</b></q></h1>
             <h2 class="text-center w-auto text-sm p-2 m-10 rounded-lg" style="background-color:var(--primary);" id="author" data-aos="fade-up"><b style="color:var(--bg);">Albert Einstein</b></h2>
@@ -126,7 +133,7 @@
     <section class="min-h-screen flex flex-col  justify-evenly items-center">
       <div>
       <h1 class="text-4xl lg:text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Here are all my <br><b>Skills</b></h1>
-      <p class="text-gray-400 mx-10 text-center" data-aos="fade-down">The green ones are the ones I am currently learning</p>
+      <p class="mx-10 text-center" data-aos="fade-down" style="color:var(--subtext);">The green ones are the ones I am currently learning</p>
       </div>
         <div class="flex flex-col lg:flex-row justify-evenly skillContainer w-full" data-aos="fade-up">
           <div id="skillsLeft" class="skillBox w-full lg:w-[35%] flex flex-col justify-evenly mx-5">
@@ -202,8 +209,8 @@
               <h3><b>Conversafe</b></h3>
               <p class="text-[#a6adc8]">A FOSS language learning platform!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" target="_blank" href="https://github.com/ShibamRoy9826/Conversafe">Repo</button>
-              <button class="" target="_blank"  href="https://conversafe.hackclub.app">Demo</button>
+              <button class="" target="_blank" onclick="window.open('https://github.com/ShibamRoy9826/Conversafe','_blank');">Repo</button>
+              <button class="" target="_blank"  onclick="window.open('https://conversafe.hackclub.app','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -215,8 +222,8 @@
               <h3><b>EasyFeh</b></h3>
               <p class="text-[#a6adc8]">A Simple wallpaper manager for linux!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" target="_blank"  href="https://github.com/ShibamRoy9826/easyfeh">Repo</button>
-              <button class="" target="_blank"  href="https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4">Demo</button>
+              <button class="" target="_blank"  onclick="window.open('https://github.com/ShibamRoy9826/easyfeh','_blank');">Repo</button>
+              <button class="" target="_blank"  onclick="window.open('https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -231,7 +238,7 @@
     <section class="min-h-screen flex flex-col  justify-evenly items-center">
         <h1 class="text-4xl lg:text-5xl m-10 text-center " data-aos="fade-down"><span class="text-4xl">Check Out my</span><br><b>Certifications & Acheivements</b></h1>
         <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
-            <figure class="card p-4 bg-[#0F0F0F]">
+            <figure class="card p-4 ">
                 <img src="res/cert/ITAutomationWIthPython.jpg" alt="CrashCourseOnPython" />
                 <figcaption class="flex flex-col justify-center items-center w-full m-2">
                     <h3 class="text-center"><b>Python Certificate</b></h3>
@@ -239,7 +246,7 @@
                 </figcaption>
                 <a href="res/cert/ITAutomationWIthPython.pdf"></a>
             </figure>
-            <figure class="card p-4 bg-[#0F0F0F]">
+            <figure class="card p-4 ">
                 <img src="res/cert/AlgorithmicToolbox.jpg" alt="AlgorithmicToolbox" />
                 <figcaption class="flex flex-col justify-center items-center w-full m-2">
                     <h3 class="text-center"><b>DSA Certificate</b></h3>
@@ -247,7 +254,7 @@
                 </figcaption>
                 <a href="res/cert/AlgorithmicToolbox.pdf"></a>
             </figure>
-            <figure class="card p-4 bg-[#0F0F0F]">
+            <figure class="card p-4">
                 <img src="res/cert/DataAnalyticsWithGoogle.jpg" alt="DataAnalyticsWithGoogle" />
                 <figcaption class="flex flex-col justify-center items-center w-full m-2">
                     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
@@ -260,20 +267,20 @@
     </section>
 
     <!-- Contact Info -->
-    <section class="flex flex-col info justify-center items-center">
+    <section class="flex flex-col info justify-center items-center" id="infoSection">
         <div class="flex flex-col justify-center items-center" data-aos="flip-right">
             <h1 class="text-5xl mx-10 text-center">Get Connected <br><b>Follow me:)</b></h1>
-            <p class="text-gray-400 text-center p-2">Get connected to me on social media</p>
+            <p class="text-center p-2">Get connected to me on social media</p>
         </div>
         <div class="flex flex-col lg:flex-row justify-evenly items-center z-2">
             <div class="flex flex-col justify-center items-center">
                 <a href="https://github.com/ShibamRoy9826/" class="ml-3 rounded-full p-2 mx-16 my-4 socialIcon" data-aos="flip-up">
-                    <svg stroke="currentColor" fill="var(--bg2);" stroke-width="0" viewBox="0 0 1024 1024" class="w-14 h-14" xmlns="http://www.w3.org/2000/svg">
+                    <svg stroke="var(--bg2)" fill="var(--bg2)" stroke-width="0" viewBox="0 0 1024 1024" class="w-14 h-14" xmlns="http://www.w3.org/2000/svg">
                         <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
                     </svg>
                 </a>
                 <h2 class="text-md ">Github</h2>
-                <p class="text-sm text-gray-300 text-center">Follow me</p>
+                <p class="text-sm text-center">Follow me</p>
             </div>
             <div class="flex flex-col justify-center items-center">
                 <a class="ml-3 rounded-full p-2 mx-16 my-4 socialIcon" data-aos="flip-up" href="https://www.reddit.com/user/shibamroy/">
@@ -284,7 +291,7 @@
 </svg>
                 </a>
                 <h2 class="text-md ">Reddit</h2>
-                <p class="text-sm text-gray-300 text-center">Watch my posts</p>
+                <p class="text-sm text-center">Watch my posts</p>
             </div>
             <div class="flex flex-col justify-center items-center">
                 <a class="ml-3 rounded-full p-2 mx-16 my-4 socialIcon" href="https://www.linkedin.com/in/shibam-roy-509774257/" data-aos="flip-up">
@@ -294,7 +301,7 @@
                     </svg>
                 </a>
                 <h2 class="text-md ">LinkedIn</h2>
-                <p class="text-sm text-gray-300 text-center">Connect with me</p>
+                <p class="text-sm text-center">Connect with me</p>
             </div>
         </div>
     </section>
@@ -381,6 +388,67 @@
         backDelay: 1000,
 
     });
+
+
+const saved=localStorage.getItem('theme')||'dark';
+const heroBg=document.getElementById("home");
+const infoBg=document.getElementById("infoSection");
+const randomTextBg=document.getElementById("randomText");
+const quoteBg=document.getElementById("quote");
+const toggleBtn=document.getElementById("darkModeToggle");
+
+let lightHeadings=document.querySelectorAll(".lightHead");
+let lightParas=document.querySelectorAll(".lightPara");
+
+
+if(saved=="dark"){
+  toggleBtn.checked=true;
+  document.documentElement.className="catppuccin";
+  heroBg.style.backgroundImage="url('res/images/bg4.webp')";
+  infoBg.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ),url('res/images/bg5.webp')";
+  randomTextBg.style.backgroundImage="url('res/images/bg2.webp')";
+  quoteBg.style.backgroundImage="url('res/images/bg3.webp')";
+}else{
+  toggleBtn.checked=false;
+  document.documentElement.className="light";
+  randomTextBg.style.backgroundImage="url('res/images/bg2Light.jpg')";
+  heroBg.style.backgroundImage="url('res/images/bg4Light.jpg')";
+  infoBg.style.backgroundImage="url('res/images/bg5Light.jpg')";
+  quoteBg.style.backgroundImage="url('res/images/bg3Light.jpg')";
+  lightHeadings.forEach(head=>{
+    head.style.color="#eff1f5";
+  })
+
+  lightParas.forEach(para=>{
+    para.style.color="#eff1f5";
+  })
+}
+
+toggleBtn.addEventListener("change",(toggleB)=>{
+  if(toggleBtn.checked){
+    document.documentElement.className="catppuccin";
+    localStorage.setItem('theme','dark')
+    randomTextBg.style.backgroundImage="url('res/images/bg2.webp')";
+    heroBg.style.backgroundImage="url('res/images/bg4.webp')";
+    quoteBg.style.backgroundImage="url('res/images/bg3.webp')";
+    infoBg.style.backgroundImage="linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) ),url('res/images/bg5.webp')";
+  }else{
+    document.documentElement.className="light";
+    localStorage.setItem('theme','light')
+    randomTextBg.style.backgroundImage="url('res/images/bg2Light.jpg')";
+    heroBg.style.backgroundImage="url('res/images/bg4Light.jpg')";
+    quoteBg.style.backgroundImage="url('res/images/bg3Light.jpg')";
+    infoBg.style.backgroundImage="url('res/images/bg5Light.jpg')";
+
+    lightHeadings.forEach(head=>{
+      head.style.color="#eff1f5";
+    })
+
+    lightParas.forEach(para=>{
+      para.style.color="#eff1f5";
+    })
+  }
+})
 
     </script>
 </body>

@@ -32,6 +32,10 @@
       <a class="mr-3 ml-4 navLink text-center" href="index.html#about">About</a>
       <a class="mr-3 ml-4 navLink text-center" href="index.html#portfolio">Portfolio</a>
       <a class="mr-3 ml-4 navLink text-center" href="index.html#contact">Contact</a>
+      <label id="switch" class="mx-10">
+        <input type="checkbox" checked="true" id="darkModeToggle">
+        <span id="slider"></span>
+      </label>
     </nav>
     <div class="hamburger w-20 h-full absolute right-0 flex flex-col justify-center items-end lg:hidden z-42">
     <span class="line"></span>
@@ -51,7 +55,6 @@
 
 
 <section class="h-72 flex flex-col items-center">
-
 <div class="flex flex-col justify-center items-center w-full h-72 portfolioStart">
   <h1 class="text-center text-4xl lg:text-5xl"><b>My Projects</b></h1>
 </div>
@@ -70,8 +73,8 @@
               <h3 class=""><b>Conversafe</b></h3>
               <p class="text-[#a6adc8]">A FOSS language learning platform!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/Conversafe" target="_blank" >Repo</button>
-              <button class="" href="https://conversafe.hackclub.app" target="_blank" >Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/Conversafe','_blank')">Repo</button>
+              <button class="" onclick="window.open('https://conversafe.hackclub.app','_blank')">Demo</button>
               </div>
             </div>
           </div>
@@ -82,8 +85,8 @@
               <h3 class=""><b>EasyFeh</b></h3>
               <p class="text-[#a6adc8]">A Simple wallpaper manager for linux!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/easyfeh" target="_blank">Repo</button>
-              <button class="" href="https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/easyfeh','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://cloud-3q71ag430-hack-club-bot.vercel.app/0easyfeh.mp4','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -96,8 +99,8 @@
               <h3 class=""><b>EcoSight</b></h3>
               <p class="text-[#a6adc8]">A website to make people more aware about the amount of pollution they cause</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project" target="_blank">Repo</button>
-              <button class="" href="https://ecosight.pythonanywhere.com" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/EcoSight-Geek-a-thon-project','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://ecosight.pythonanywhere.com','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -108,8 +111,8 @@
               <h3 class=""><b>QT_Tile</b></h3>
               <p class="text-[#a6adc8]">A simple yet beautiful qtile rice(with a customizable installer for arch)!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/qt_tile" target="_blank">Repo</button>
-              <button class="" href="https://cloud-7t3z6wj50-hack-club-bot.vercel.app/0inshot_20241216_102136759.mp4" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/qt_tile','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://cloud-7t3z6wj50-hack-club-bot.vercel.app/0inshot_20241216_102136759.mp4','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -121,8 +124,8 @@
               <h3 class=""><b>Remime</b></h3>
               <p class="text-[#a6adc8]">An efficient way to manage your time through the terminal, its a TUI application made with textual!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/remime" target="_blank">Repo</button>
-              <button class="" href="https://ecosight.pythonanywhere.com" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/remime','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://ecosight.pythonanywhere.com','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -133,8 +136,8 @@
               <h3 class=""><b>SantaPlace</b></h3>
               <p class="text-[#a6adc8]">You doesn't like santa? Its mostly a countdown website for christmas! Made for an event called boba drops organised by hackclub!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/SantaPlace" target="_blank">Repo</button>
-              <button class="" href="https://shibamroy9826.github.io/SantaPlace" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/SantaPlace','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://shibamroy9826.github.io/SantaPlace','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -146,8 +149,8 @@
               <h3 class=""><b>SubSeaSignal</b></h3>
               <p class="text-[#a6adc8]">Rock vs Mine classification, for safer underwater travel ig?</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/SubSeaSignal" target="_blank">Repo</button>
-              <button class="" href="https://subseasignal.pythonanywhere.com" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/SubSeaSignal','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://subseasignal.pythonanywhere.com','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -158,8 +161,8 @@
               <h3 class=""><b>Portfolio</b></h3>
               <p class="text-[#a6adc8]">This website itself? Yup, I made it!</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/shibamroy9826.github.io" target="_blank">Repo</button>
-              <button class="" href="https://shibamroy9826.github.io/" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/shibamroy9826.github.io','_blank');">Repo</button>
+              <button class="" onclick="window.open('https://shibamroy9826.github.io/','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -172,8 +175,8 @@
               <h3 class=""><b>Remime Web Lite</b></h3>
               <p class="text-[#a6adc8]">Remime, but a super lightweight version(Had to cutoff a lot of features though), but its small enough to fit into a QR code! (Made for an event called saycheese organised by hackclub!)</p>
               <div class="flex flex-row justify-evenly cardButtons">
-              <button class="" href="https://github.com/ShibamRoy9826/remime-web-lite" target="_blank">Repo</button>
-              <button class="" href="#" target="_blank">Demo</button>
+              <button class="" onclick="window.open('https://github.com/ShibamRoy9826/remime-web-lite','_blank');">Repo</button>
+              <button class="" onclick="window.open('#','_blank');">Demo</button>
               </div>
             </div>
           </div>
@@ -187,30 +190,30 @@
 <!-- Row 1 -->
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/ITAutomationWIthPython.jpg" alt="ITAutomationWithPython" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certificate</b></h3>
-    <h4 class="text-center text-gray-300">IT Automation with Python</h4>
+    <h4 class="text-center ">IT Automation with Python</h4>
   </figcaption>
   <a href="res/cert/ITAutomationWIthPython.pdf"></a>
 </figure>
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/AlgorithmicToolbox.jpg" alt="AlgorithmicToolbox" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>DSA Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Algorithmic Toolbox</h4>
+    <h4 class="text-center ">Algorithmic Toolbox</h4>
   </figcaption>
   <a href="res/cert/AlgorithmicToolbox.pdf"></a>
 </figure>
 
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/DataAnalyticsWithGoogle.jpg" alt="DataAnalyticsWithGoogle" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Analytics with Google</h4>
+    <h4 class="text-center ">Data Analytics with Google</h4>
   </figcaption>
   <a href="res/cert/DataAnalyticsWithGoogle.pdf"></a>
 </figure>
@@ -223,30 +226,30 @@
 
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/CloudConfig.jpg" alt="CloudConfig" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Cloud Configurations</h4>
+    <h4 class="text-center ">Cloud Configurations</h4>
   </figcaption>
   <a href="res/cert/CloudConfig.pdf"></a>
 </figure>
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/CaseStudy.jpg" alt="CaseStudy" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">A Case Study: Google Data Analytics Capstone</h4>
+    <h4 class="text-center ">A Case Study: Google Data Analytics Capstone</h4>
   </figcaption>
   <a href="res/cert/CaseStudy.pdf"></a>
 </figure>
 
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/AnalyzeData.jpg" alt="AnalyzeData" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Analyzing Data</h4>
+    <h4 class="text-center ">Analyzing Data</h4>
   </figcaption>
   <a href="res/cert/AnalyzeData.pdf"></a>
 </figure>
@@ -258,30 +261,30 @@
 <!-- Row 3 -->
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/Data-drivenDecisions.jpg" alt="Data-drivenDecisions" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Driven Decision Making</h4>
+    <h4 class="text-center ">Data Driven Decision Making</h4>
   </figcaption>
   <a href="res/cert/Data-drivenDecisions.pdf"></a>
 </figure>
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/DataEverywhere.jpg" alt="DataEverywhere" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Everywhere</h4>
+    <h4 class="text-center ">Data Everywhere</h4>
   </figcaption>
   <a href="res/cert/DataEverywhere.pdf"></a>
 </figure>
 
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/DataExploration.jpg" alt="DataExploration" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Exploration</h4>
+    <h4 class="text-center ">Data Exploration</h4>
   </figcaption>
   <a href="res/cert/DataExploration.pdf"></a>
 </figure>
@@ -293,30 +296,30 @@
 <!-- Row 4 -->
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/DataProcess.jpg" alt="DataProcess" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Preprocessing</h4>
+    <h4 class="text-center ">Data Preprocessing</h4>
   </figcaption>
   <a href="res/cert/DataProcess.pdf"></a>
 </figure>
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/DataViz.jpg" alt="DataViz" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Visualization</h4>
+    <h4 class="text-center ">Data Visualization</h4>
   </figcaption>
   <a href="res/cert/DataViz.pdf"></a>
 </figure>
 
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/RProgramming.jpg" alt="RProgramming" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Data Analytics Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data analytics with R Programming language</h4>
+    <h4 class="text-center ">Data analytics with R Programming language</h4>
   </figcaption>
   <a href="res/cert/RProgramming.pdf"></a>
 </figure>
@@ -328,30 +331,30 @@
 <!-- Row 5 -->
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/DataStructures.jpg" alt="DataStructures" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>DSA Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Data Structures</h4>
+    <h4 class="text-center ">Data Structures</h4>
   </figcaption>
   <a href="res/cert/DataStructures.pdf"></a>
 </figure>
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/Troubleshooting.jpg" alt="Troubleshooting" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Troubleshooting & Debugging</h4>
+    <h4 class="text-center ">Troubleshooting & Debugging</h4>
   </figcaption>
   <a href="res/cert/Troubleshooting.pdf"></a>
 </figure>
 
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/GitGithub.jpg" alt="GitGithub" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certification</b></h3>
-    <h4 class="text-center text-gray-300"> Git & Github</h4>
+    <h4 class="text-center "> Git & Github</h4>
   </figcaption>
   <a href="res/cert/GitGithub.pdf"></a>
 </figure>
@@ -363,30 +366,30 @@
 
 <div class="flex flex-col lg:flex-row justify-evenly" data-aos="fade-up">
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/RealWorldTasks.jpg" alt="RealWorldTasks" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Real World Tasks with Python</h4>
+    <h4 class="text-center ">Real World Tasks with Python</h4>
   </figcaption>
   <a href="res/cert/RealWorldTasks.pdf"></a>
 </figure>
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/PythonInteractsOS.jpg" alt="PythonInteractsOS" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Interacting with OS using Python</h4>
+    <h4 class="text-center ">Interacting with OS using Python</h4>
   </figcaption>
   <a href="res/cert/PythonInteractsOS.pdf"></a>
 </figure>
 
 
-<figure class="card p-4 bg-[#0F0F0F]">
+<figure class="card p-4">
   <img src="res/cert/CrashCourse.jpg" alt="CrashCourse" />
   <figcaption class="flex flex-col justify-center items-center w-full m-2">
     <h3 class="text-center"><b>Python Certificate</b></h3>
-    <h4 class="text-center text-gray-300">Crash Course on Python</h4>
+    <h4 class="text-center ">Crash Course on Python</h4>
   </figcaption>
   <a href="res/cert/CrashCourse.pdf"></a>
 </figure>
@@ -400,7 +403,7 @@
     <!-- Footer -->
     <footer class="body-font border-t border-gray-800">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href="#">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center" style="color:var(--fg);" href="#">
                 <span class="ml-3 text-xl logo ">Shibam Roy</span>
             </a>
             <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4" style="color:var(--fg);" >© 2023 —
@@ -450,6 +453,51 @@
   duration: 800
 
 });
+
+
+// dark mode toggle
+const toggleBtn=document.getElementById("darkModeToggle");
+const saved=localStorage.getItem('theme')||'dark';
+
+let lightHeadings=document.querySelectorAll(".lightHead");
+let lightParas=document.querySelectorAll(".lightPara");
+
+
+if(saved=="dark"){
+  toggleBtn.checked=true;
+  document.documentElement.className="catppuccin";
+}else{
+  toggleBtn.checked=false;
+  document.documentElement.className="light";
+
+  lightHeadings.forEach(head=>{
+    head.style.color="#eff1f5";
+  })
+
+  lightParas.forEach(para=>{
+    para.style.color="#eff1f5";
+  })
+}
+
+toggleBtn.addEventListener("change",(toggleB)=>{
+  if(toggleBtn.checked){
+    document.documentElement.className="catppuccin";
+    localStorage.setItem('theme','dark')
+  }else{
+    document.documentElement.className="light";
+    localStorage.setItem('theme','light')
+
+    lightHeadings.forEach(head=>{
+      head.style.color="#eff1f5";
+    })
+
+    lightParas.forEach(para=>{
+      para.style.color="#eff1f5";
+    })
+  }
+})
+
+
 </script>
 </body>
 </html>

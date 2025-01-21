@@ -5,13 +5,6 @@
 	background-attachment: fixed;
   background-position: center;
 }
-.portfolioStart{
-	background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url("../res/images/bg2.webp");
-	background-size: cover;
-	background-repeat: none;
-	background-attachment: fixed;
-  background-position: center;
-}
 .imp{
 	font-family:'Silkscreen', sans-serif;
 }
@@ -65,6 +58,7 @@
 }
 *{
 	font-family: 'Montserrat', sans-serif;
+  transition:0.5s;
 }
 
 
@@ -95,7 +89,7 @@ html{
 }
 
 .navLink:hover{
-	color: var(--subtext);
+	color: var(--fg2);
 }
 
 .navLinkSmall{
@@ -161,7 +155,6 @@ html{
   max-width: 315px;
   color: #fff;
   font-size: 1rem;
-  background: #000;
 }
 
 .card *,
@@ -182,7 +175,6 @@ html{
   
   content: '';
   background-color: #fff;
- 
   opacity: 0;
 }
 
@@ -326,16 +318,16 @@ ol li{
 .coolButtons{
   color:var(--bg2);
   background-color:var(--primary);
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5 ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   font-family: 'Ubuntu', sans-serif;
 }
 
 .coolButtons:hover{
-  transition: 1s linear;
+  transition: 0.5s linear;
   background-color: var(--primary);
   filter: drop-shadow(0 0 10px var(--primary)) drop-shadow(0 0 40px var(--primary));
 }
@@ -347,6 +339,60 @@ header{
   width:100vw;
 }
 
+#switch {
+ font-size: 1rem;
+ position: relative;
+ display: inline-block;
+ width: 3rem;
+ height: 1.2rem;
+ border:none;
+}
+
+#switch input {
+ display: none;
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+#slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: var(--fg3);
+ transition: .2s;
+ border-radius: 1rem;
+}
+
+#slider:before {
+ position: absolute;
+ content: "";
+ height: 1.1rem;
+ width: 1.1rem;
+ border-radius: 1rem;
+ bottom:1px;
+ background-color: var(--fg);
+ transition: .4s;
+}
+
+#switch input:checked + #slider::before {
+ background-color: var(--primary);
+}
+
+#switch input:checked + #slider {
+ background-color: var(--fg3);
+}
+
+#switch input:focus + #slider {
+ box-shadow: 0 0 1px var(--fg3);
+}
+
+#switch input:checked + #slider:before {
+ transform: translateX(1.9em);
+}
 
 
 /*Media Queries*/
